@@ -1,20 +1,22 @@
-## PC Usage Timer - Desktop
+# PC Usage Timer - Desktop
 
-The desktop version of HTML, CSS & JS PC Usage Timer using the NW.js SDK (Node-Webkit)
+#### The desktop version of PC Usage Timer using the NW.js SDK (Node-Webkit)
+
+It is primarily implemented with **_[face-api.js](https://github.com/justadudewhohacks/face-api.js/)_**, basic HTML, CSS, bootstrap 4, and JavaScript.
 
 ## Usage
+
+Run the following commands from the command-line interface -
 
 ```
 npm install
 
-# Run app
+# to run app -
+
 npm run dev
 
-# Run executable - win64
+# to build executable -
 
-1. cd dist/src/win64 
-2. `PC Usage Timer - Desktop.exe` **press enter**
-
-# Build app
 npm run build
+
 ```
