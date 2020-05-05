@@ -1,0 +1,17 @@
+{
+  "name": "pc-usage-timer",
+  "version": "1.0.2",
+  "description": "",
+  "main": "main.html",
+  "scripts": {
+    "dev": "nw src/",
+    "build": "nwbuild --platforms win64 --buildDir dist/ src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nw": "^0.44.1-sdk",
+    "nw-builder": "^3.5.7"
+  }
+}

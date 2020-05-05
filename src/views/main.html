@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PC Usage Timer</title>
+  <link rel="stylesheet" href="../styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+  <h1 class="display-1 text-center">PC Usage Timer</h1>
+
+  <div class="row mx-0 no-gutters mt-5 pt-5">
+    <div class="col-7 pl-2" id="video-container">
+      <video id="video" width="720" height="480" autoplay muted></video>
+
+    </div>
+    <div class="col-5 d-flex">
+      <h1 class="display-2 m-auto" id="timer">00:00:00</h1>
+    </div>
+  </div>
+
+
+  <script src="../app/libraries/jquery-3.4.1.min.js"></script>
+  <script src="../app/libraries/bootstrap.min.js"></script>
+  <script defer src="../app/libraries/face-api.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      let height = 0, width = 0
+
+      width = $('#video-container').width()
+      height = $('#video-container').height()
+
+      $('video').attr("width", width.toString())
+      $('video').attr("height", height.toString())
+
+
+      $.getJSON('../package.json', function (data) { // reads file 
+        $('title').append(' v' + data.version)
+      })
+
+
+    })
+  </script>
+  <script defer type="module" src="../app/script.js">
+
+  </script>
+</body>
+
+</html>
